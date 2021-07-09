@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+<link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+
+
+@media only screen and (max-width: 768px){
+.log {
+    width: 210px !important;
+    height: 27px !important;
+    
+    position: relative !important ;
+    width: 70px !important;
+    left: 146px!important;
+    top: -349px!important;
+
+
+   }
+
+}
+
+
+.my-btn {
+    width: 210px;
+    height: 40px;
+    position: relative;
+    top: -607px;
+    left: 1003px;}
+
+
+.txt li{color:#615454!important;display: flex;list-style-type: disc!important;line-height: 38px;}
+  
+  /* Just for CodePen styling - don't include if you copy paste */
+h4{font-weight: 600;color: rgb(251 171 36);}
+p{color:#615454;}
+
+
+
+
+</style>
+
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+   <div class="container">
+         
+  <div class="download">
+    <button class="my-btn  app d-none"> <img src="images/and.png" width="20"> Download App</button>
+  </div>
+
+    <a class="navbar-brand" href="index.html"><img src="images/footerlogo.png" width=160></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+     <li><button class="my-btn d-none"> &nbsp;<i class=" fa fa-apple"></i> &nbsp;|  &nbsp;<i class="fa fa-windows"></i>  &nbsp;Get Desktop App</button></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            How to Play
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Poker</a>
+            <a class="dropdown-item" href="#">Rummy</a>
+            <a class="dropdown-item" href="#">Ludo</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="promotions.html">Promotions</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Poker</a>
+            <a class="dropdown-item" href="#">Rummy</a>
+            <a class="dropdown-item" href="#">Ludo</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download
+
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Poker</a>
+            <a class="dropdown-item" href="#">Rummy</a>
+            <a class="dropdown-item" href="#">Ludo</a>
+          </div>
+        </li>
+
+
+
+
+
+ 
+      </ul>
+    </div>
+    </div>
+  
+  </nav> 
+
+
+  
+  <!--banner-->
+
+<div class="banners">
+
+    <img src="images/bbb.jpg">
+
+ 
+</div>
+
+<div class="container-fluid">
+    <button class="my-btn log" onclick="openForm()">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="my-btn log" onclick="openForm()">Signup</button>
+
+    <div class="download">
+      <button class="my-btn  app d-none"> <img src="images/and.png" width="20"> Download App</button>
+    </div>
+
+    <div class="container">
+        <div class="row  mb-5">
+            <div class="col-md-12 mt-4 mb-4"><h2>Cash Smash 5.0 - India's Favourite Cash Promotion</h2></div>
+            <div class="col-md-12">
+<div class="tabs">
+    <ul id="tabs-nav">
+      <li><a href="#tab1">Info</a></li>
+      <li><a href="#tab2">NLHE</a></li>
+      <li><a href="#tab3">PLO-4 & PLO-5</a></li>
+      <li><a href="#tab4">Terms and Conditions</a></li>
+    </ul> <!-- END tabs-nav -->
+    <div id="tabs-content">
+      <div id="tab1" class="tab-content">
+
+       <h4 class="mt-5"> The Cash Action Continues At The Felts Is About This July!</h4>
+        <p>The blazin’ hot cash action continues at the PokerBaazi felts this July! Play cash games across stakes and win from a whopping total prize pool of INR 3 Crore + GTD in JUST 30 days. Choose the variant of your choice and showcase your domination on the leaderboards daily to be rewarded in the form of withdrawable chips.</p>
+        
+<h4>Win From 10 LAC+ Every Single Day!</h4>
+        <p>Take part in India’s most popular cash promotion! Cash Smash 5.0 is available across all stakes in Texas Hold’Em and both PLO variants, divided into 5 extremely rewarding leaderboards - three spanning 6 hours each between:</p>
+        <ul class="txt">
+       <li> 9:00 AM - 3:00 PM</li>
+       <li>3:00 PM - 9:00 PM</li>
+       <li> 9:00 PM - 3:00 AM</li>
+
+        </ul>
+
+       <p>Letting you win daily, check the leaderboards for paid places at each stake!</p>
+        
+      <p>The leaderboards will run every day from 1st - 30th July 2021. Please note that PLO-4 & PLO-5 action will be combined.</p>
+
+
+
+
+
+      </div>
+      <div id="tab2" class="tab-content">
+        <h4 class="mt-5">Early Morning Leaderboard</h4>
+        <p>9:00 AM - 3:00 PM: 40K GTD
+        </p>
+        <table class="table bgss text-white">
+            <thead>
+              <tr>
+                <th scope="col">Catogery</th>
+                <th scope="col">Stakes</th>
+                <th scope="col">Paid Places</th>
+                <th scope="col">Prize</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Micro</th>
+                <td>Stakes</td>
+                <td>40</td>
+                <td>100000</td>
+              </tr>
+              <tr>
+                <th scope="row">Low</th>
+                <td>10/25 and 25/50</td>
+                <td>25</td>
+                <td>30000</td>
+              </tr>
+              
+            </tbody>
+          </table>
+   <h4 class="mt-5">Afternoon Leaderboard</h4>
+  <p> 3:00 PM - 9:00 PM: 53K GT</p>
+
+          <table class="table bgss text-white">
+            <thead>
+              <tr>
+                <th scope="col">Catogery</th>
+                <th scope="col">Stakes</th>
+                <th scope="col">Paid Places</th>
+                <th scope="col">Prize</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Micro</th>
+                <td>Stakes</td>
+                <td>50</td>
+                <td>100000</td>
+              </tr>
+              <tr>
+                <th scope="row">Low</th>
+                <td>10/25 and 25/50</td>
+                <td>30</td>
+                <td>30000</td>
+              </tr>
+              
+            </tbody>
+          </table>
+      
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+      <div id="tab3" class="tab-content">
+
+        <h4 class="mt-5">Early Morning Leaderboard</h4>
+        <p>9:00 AM - 3:00 PM: 40K GTD
+        </p>
+        <table class="table bgss text-white">
+            <thead>
+              <tr>
+                <th scope="col">Catogery</th>
+                <th scope="col">Stakes</th>
+                <th scope="col">Paid Places</th>
+                <th scope="col">Prize</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Micro</th>
+                <td>Stakes</td>
+                <td>30</td>
+                <td>100000</td>
+              </tr>
+              <tr>
+                <th scope="row">Low</th>
+                <td>10/25 and 25/50</td>
+                <td>30</td>
+                <td>40000</td>
+              </tr>
+              
+            </tbody>
+          </table>
+   <h4 class="mt-5">Afternoon Leaderboard</h4>
+  <p> 3:00 PM - 9:00 PM: 53K GT</p>
+
+          <table class="table bgss text-white">
+            <thead>
+              <tr>
+                <th scope="col">Catogery</th>
+                <th scope="col">Stakes</th>
+                <th scope="col">Paid Places</th>
+                <th scope="col">Prize</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Micro</th>
+                <td>Stakes</td>
+                <td>40</td>
+                <td>40000</td>
+              </tr>
+              <tr>
+                <th scope="row">Low</th>
+                <td>10/25 and 25/50</td>
+                <td>30</td>
+                <td>30000</td>
+              </tr>
+           
+            </tbody>
+          </table>
+      
+
+
+
+
+
+
+
+
+
+      </div>
+
+      </div>
+
+
+
+      <div id="tab4" class="tab-content">
+          <ul class="txt mt-5">
+       <li>No opt in required.</li>
+        <li> All prizes will be credited as withdrawable chips.</li>
+            <li> Prizes will be credited in your commission balance 12 hours post the leaderboard completion.</li>
+                <li> Each player will get paid from the prizepool based on his/her total contribution towards it in the form of coins.</li>
+                    <li>Only coins generated on relevant Cash Tables will be counted towards the promotion.</li>
+                        <li> PokerBaazi holds the right to modify or terminate the promotion at any time.</li>
+
+
+     </ul>
+
+      </div>
+    </div> <!-- END tabs-content -->
+  </div> <!-- END tabs -->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!--footer-->
+
+<div class="container-fluid bgss p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"><img src="images/footerlogo.png" width="160" class="logg"></div>
+  
+        <div class="col-md-6">
+  <ul class="foot-text">
+    <li>Legality</li>&nbsp; &nbsp;
+     <li>Certification</li>&nbsp; &nbsp;
+    <li>Welfare </li>&nbsp; &nbsp;
+    <li>Gaming </li>&nbsp; &nbsp;
+    <li>FAQ </li>&nbsp; &nbsp;
+    <li>Blog</li>
+  </ul>
+  
+        </div>
+  
+  
+        <div class="col-md-6 mt-3"><i class="fa fa-android"></i> &nbsp;&nbsp;  <i class="fa fa-windows"></i>&nbsp;&nbsp;  <i class="fa fa-apple"></i>&nbsp;&nbsp;  <i class="fa fa-ios"></i></div>
+  
+        <div class="col-md-6 mt-3">
+          <div class="social-links">
+            <a href="#"><i class="fa fa-google"></i></a> &nbsp;&nbsp; 
+            <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp; 
+            <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp; 
+            <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp; 
+          </div>
+  
+        </div>
+  
+        <div class="col-md-12 mt-4">
+          <h5 class="text-white">Approved by Major Banks of India</h5>
+        </div>
+          <span class="ico">
+        <div class="col-md-1 mt-3"><img src="images/1.png" class="ims" ></div>&nbsp;&nbsp;
+  
+  
+        <div class="col-md-1 mt-3"><img src="images/4.png" class="ims"></div>&nbsp;&nbsp;
+        <div class="col-md-1 mt-3"><img src="images/5.png"class="imn" ></div>&nbsp;&nbsp;&nbsp;
+  
+        <div class="col-md-1 mt-3"><img src="images/10.png" class="ims"></div>&nbsp;&nbsp;
+      </span>
+        <hr class="new">
+        <div class="row">
+  <div class="col-6 mt-4">
+    <h5 class="text-white ujj" style="white-space: nowrap;font-size: 18px;">Privacy Policy|Terms & Conditions|Disclaimer</h5></div>
+  
+  <div class="col-6 mt-4 my-c" style="position: relative;left:430px;font-size: 18px;"><h5 class="text-white">© 2021 Pokerbaazi. All rights reserved.</h5></div>
+  
+  </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="form-popup" id="myForm">  
+  <div class="container">
+    <div class="frame" data-dismiss="modal">
+      <div class="nav">
+        <ul class="links">
+          <li class="signin-active"><a class="btn  btt">Sign in</a></li>
+          <li class="signup-inactive"><a class="btn btt">Sign up </a></li>
+        </ul>
+      </div>
+      <div ng-app ng-init="checked = false">
+  
+                  <form class="form-signin" action="" method="post" name="form">
+           <h5 class="text-center play">LOGIN AND PLAY</h5>
+            <input class="form-styling" type="text" name="username" placeholder="Username"/>
+          
+            <input class="form-styling" type="password" name="password" placeholder="Password"/>
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1" style="font-size: 17px;">
+    
+          Remember me</label>
+            <div class="btn-animate">
+              <a class="btn-signin">Login</a>
+        
+            </div>
+        
+    
+                  </form>
+          
+                  <form class="form-signup" action="" method="post" name="form">
+            <h5 class="text-center play">	SIGNUP AND START WINNING</h5>
+              <div class="row">
+              <div class="col-md-12">
+           
+            <input class="form-styling" type="text" name="fullname" placeholder="Username"/>
+        </div><br>
+        
+        <div class="col-md-6">
+          
+            <input class="form-styling" type="Password" name="fullname" placeholder="Password"/><br>
+        </div>
+        
+        <div class="col-md-6">
+       
+            <input class="form-styling" type="password" name="fullname" placeholder="Confirm Password"/><br>
+        </div>
+            <div class="col-md-12">
+          
+            <input class="form-styling" type="text" name="mobile" placeholder="Mobile No"/>
+        </div>
+        
+            <div class="col-md-6">
+            <input type="checkbox" id="myCheck"  name="vehicle2" value="Bike">
+            <label for="myCheck" style="font-size: 16px;">
+    
+          Have a promocode?</label>
+         </div>
+       
+               <div class="col-md-6 mt-2">
+                <input class="form-styling" type="text" name="code" id="udd" placeholder="Enter Code"/>
+     </div>
+     
+     
+     <div class="col-md-12">
+             <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+            <label for="vehicle3" style="font-size: 16px;">
+    
+          I accept to the terms and conditionsand Privacy Policy.</label>
+    
+       </div>
+         
+       
+            <a  class="btn-signup text-white">Sign Up</a>
+        
+            </div>
+      
+                  </form>
+        
+
+        
+     
+  
+      
+
+    <div id="close">X</div>
+  
+  </div></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+
+
+
+
+
+
+  
+  <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+  
+
+      <!-- jQuery library -->
+      <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<script>
+  var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script>
+
+<script>
+
+  // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+</script>
+
+
+
+
+
+
+<script>
+  function myFunction() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck");
+    // Get the output text
+    var text = document.getElementById("text");
+  
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    
+    } else {
+      text.style.display = "none";
+    }
+  }
+      </script>
+  
+  
+  <script>
+  $(function() {
+    $(".btn").click(function() {
+      $(".form-signin").toggleClass("form-signin-left");
+      $(".form-signup").toggleClass("form-signup-left");
+      $(".frame").toggleClass("frame-long");
+      $(".signup-inactive").toggleClass("signup-active");
+      $(".signin-active").toggleClass("signin-inactive");
+      $(".forgot").toggleClass("forgot-left");   
+      $(this).removeClass("idle").addClass("active");
+    });
+  });
+  
+
+
+  </script>
+
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#close").click(function(){
+          $(".frame,#close").hide();
+          
+        });
+  
+        $(".my-btn ").click(function(){
+          $(".frame,#close").show();
+          
+        });
+        
+      });
+    </script>   
+ 
+
+	<script>
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("udd");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+	
+  } else {
+    text.style.display = "none";
+  }
+}
+		</script>
+		
+		<script>
+		$(document).ready(function(){
+  $("#myCheck").click(function(){
+    $("#udd").show();
+	
+  });
+  
+
+  
+});
+</script>
+
+<script>
+    $('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').click(function(){
+  $('#tabs-nav li').removeClass('active');
+  $(this).addClass('active');
+  $('.tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+</script>
+
+
+
+</body>
+</html>
